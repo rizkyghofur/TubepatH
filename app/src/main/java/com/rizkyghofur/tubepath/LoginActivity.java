@@ -21,9 +21,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
     private Button buttonSignup;
     private EditText editTextEmail;
     private EditText editTextPassword;
-
     private FirebaseAuth firebaseAuth;
-
     private ProgressDialog progressDialog;
 
     @Override
@@ -43,7 +41,6 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         buttonSignIn = findViewById(R.id.btnsignin);
         buttonSignup  = findViewById(R.id.btnsignup);
         progressDialog = new ProgressDialog(this);
-
         buttonSignIn.setOnClickListener(this);
         buttonSignup.setOnClickListener(this);
     }
@@ -64,7 +61,6 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
 
         progressDialog.setMessage("Proses login, Mohon tunggu");
         progressDialog.show();
-
         firebaseAuth.signInWithEmailAndPassword(email, password)
                 .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
                     @Override
