@@ -4,18 +4,25 @@
 
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" /> <!-- permission required to automatically restart a repeating alarm if the user reboots the device -->
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
 
     <application
-        android:hardwareAccelerated="false"
-        android:largeHeap="true"
         android:allowBackup="true"
+        android:hardwareAccelerated="false"
         android:icon="@drawable/logo"
         android:label="@string/app_name"
+        android:largeHeap="true"
         android:roundIcon="@drawable/logo"
         android:screenOrientation="locked"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".RapatActivity"></activity>
+        <activity android:name=".AboutActivity" />
+        <activity android:name=".BelajarActivity" />
+        <activity android:name=".AlarmActivity" />
+        <activity android:name=".TugasActivity" />
+        <activity android:name=".TentangActivity" />
         <activity android:name=".CheckInet">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -26,13 +33,23 @@
         <activity android:name=".ProfileActivity" />
         <activity android:name=".RegisterActivity" />
         <activity android:name=".LoginActivity" />
-        <activity android:name=".SplashScreen">
-        </activity>
+        <activity android:name=".SplashScreen" />
         <activity android:name=".WelcomeActivity" />
         <activity android:name=".MainMenuActivity" />
+
         <meta-data
             android:name="preloaded_fonts"
-            android:resource="@array/preloaded_fonts" />
+            android:resource="@array/preloaded_fonts" /> <!-- Register the Alarm Receiver -->
+        <receiver
+            android:name=".AlarmReceiver1"
+            android:enabled="false">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name=".AlarmReceiver"
+            android:process=":remote" />
     </application>
 
 </manifest>
