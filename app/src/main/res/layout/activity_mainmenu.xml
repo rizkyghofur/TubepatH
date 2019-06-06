@@ -3,71 +3,92 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:background="@drawable/bground"
     android:layout_height="match_parent"
+    android:background="@drawable/bground"
     tools:context="com.rizkyghofur.tubepath.MainMenuActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="150dp"
-        android:layout_marginTop="320dp">
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="30dp"
+        android:orientation="vertical">
 
-        <Button
-            android:id="@+id/tugas"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginTop="265dp">
+
+            <Button
+                android:id="@+id/tugas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginRight="15dp"
+                android:background="@android:color/transparent"
+                android:drawableTop="@drawable/ic_tugas"
+                android:drawablePadding="5dp"
+                android:onClick="Tugas"
+                android:text="Tugas" />
+
+            <Button
+                android:id="@+id/belajar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginRight="15dp"
+                android:background="@android:color/transparent"
+                android:drawableTop="@drawable/ic_belajar"
+                android:drawablePadding="5dp"
+                android:onClick="Belajar"
+                android:text="Belajar" />
+
+            <Button
+                android:id="@+id/rapat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="0dp"
+                android:background="@android:color/transparent"
+                android:drawableTop="@drawable/ic_meeting"
+                android:drawablePadding="5dp"
+                android:onClick="Rapat"
+                android:text="Rapat" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
             android:layout_marginTop="0dp"
-            android:drawableTop="@drawable/ic_tugas"
-            android:drawablePadding="10dp"
-            android:text="Tugas" />
+            android:orientation="horizontal">
 
-        <Button
-            android:id="@+id/belajar"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="0dp"
-            android:drawableTop="@drawable/ic_belajar"
-            android:drawablePadding="10dp"
-            android:text="Belajar" />
+            <Button
+                android:id="@+id/info_alarm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="70dp"
+                android:layout_marginTop="0dp"
+                android:background="@android:color/transparent"
+                android:drawableTop="@drawable/ic_user"
+                android:drawablePadding="5dp"
+                android:onClick="Alarm"
+                android:text="Alarm" />
 
-        <Button
-            android:id="@+id/rapat"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="0dp"
-            android:drawableTop="@drawable/ic_meeting"
-            android:drawablePadding="10dp"
-            android:text="Rapat" />
-    </LinearLayout>
+            <Button
+                android:id="@+id/tentang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="45dp"
+                android:layout_marginTop="0dp"
+                android:background="@android:color/transparent"
+                android:drawableTop="@drawable/ic_info"
+                android:drawablePadding="5dp"
+                android:onClick="Tentang"
+                android:text="Tentang" />
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="150dp"
-        android:layout_marginTop="500dp"
-        android:orientation="horizontal">
-
-        <Button
-            android:id="@+id/info_akun"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="75dp"
-            android:layout_marginTop="0dp"
-            android:drawableTop="@drawable/ic_user"
-            android:drawablePadding="10dp"
-            android:text="Akun" />
-
-        <Button
-            android:id="@+id/tentang"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="0dp"
-            android:drawableTop="@drawable/ic_info"
-            android:drawablePadding="10dp"
-            android:text="Tentang" />
+        </LinearLayout>
 
     </LinearLayout>
 
@@ -89,18 +110,20 @@
 
     <FrameLayout
         android:id="@+id/fragment_container"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
-        android:layout_above="@id/bottom_navigation">
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom_navigation"
+        android:animateLayoutChanges="true">
 
     </FrameLayout>
 
-        <android.support.design.widget.BottomNavigationView
-            android:id="@+id/bottom_navigation"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            app:menu="@menu/bottom_navigation"
-            android:background="?android:attr/windowBackground"/>
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimary"
+        app:itemIconTint="@drawable/nav_item_color_state"
+        app:itemTextColor="@android:color/white" />
 
 </RelativeLayout>
