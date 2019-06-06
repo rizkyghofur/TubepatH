@@ -3,6 +3,8 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#828494</color>
     <color name="colorAccent">#FF4081</color>
+    <color name="colorCheck">#ffffff</color>
+    <color name="colorUncheck">#B2D7D2</color>
 
     <!-- Screens background color-->
     <color name="bg_screen1">#800000</color>
@@ -35,4 +37,16 @@
         <item>@color/dot_dark_screen3</item>
         <item>@color/dot_dark_screen4</item>
     </array>
+
+    <color name="textcolorHeader">#069ECF</color>
+    <color name="textColorPrimary">#000000</color>
+    <color name="textColorSecondary">#A5A5A5</color>
+
+    <!--switch color-->
+
+    <color name="thumb_active">#069ECF</color>
+    <color name="track_active">#66069ECF</color>
+
+    <color name="thumb_inactive">#A5A5A5</color>
+    <color name="track_inactive">#66A5A5A5</color>
 </resources>

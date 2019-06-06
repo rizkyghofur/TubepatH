@@ -13,4 +13,19 @@
     <string name="slide_3_desc">Setelah Anda mengikuti proses belajar mengajar di Institusi Anda, terkadang Anda lupa bahwa hari tersebut ada rapat. Gunakan aplikasi ini dan masukkan waktu dan tempat di mana Anda akan mengikuti rapat.</string>
     <string name="slide_4_title">INGAT, BANYAK HAL UNTUK DILAKUKAN SELAMA PROSES BELAJAR</string>
     <string name="slide_4_desc">Banyak hal yang harus Anda ikuti selama pembelajaran, tentu waktu akan selalu berjalan dan terkadang lupa akan suatu hal. Gunakan saja aplikasi sebagai pengingat selama belajar.</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="home">Home</string>
+    <string name="jadwal">Jadwal</string>
+    <string name="akun">Akun</string>
+    <string name="fragment_home">Fragment Home</string>
+    <string name="fragment_jadwal">Fragment Jadwal</string>
+    <string name="fragment_akun">Fragment Akun</string>
+
+    <string name="sett_reminder_header">Set Reminder</string>
+    <string name="sett_reminder_label">Remind Me</string>
+    <string name="sett_reminder_desc">We will remind you to make entiries of your expense</string>
+    <string name="sett_reminder_time_label">Set Reminder Time</string>
+    <string name="sett_reminder_time_content">8 : 00 PM</string>
 </resources>
