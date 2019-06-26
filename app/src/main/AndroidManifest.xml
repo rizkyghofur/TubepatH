@@ -17,7 +17,12 @@
         android:screenOrientation="locked"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".RapatActivity"></activity>
+        <activity android:name=".LihatCatat"></activity>
+        <activity android:name=".Catat" />
+        <activity android:name=".Notepad" />
+        <activity android:name=".SImpleCalc" />
+        <activity android:name=".LainnyaActivity" />
+        <activity android:name=".RapatActivity" />
         <activity android:name=".AboutActivity" />
         <activity android:name=".BelajarActivity" />
         <activity android:name=".AlarmActivity" />
