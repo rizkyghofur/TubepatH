@@ -5,6 +5,7 @@
     <color name="colorAccent">#FF4081</color>
     <color name="colorCheck">#ffffff</color>
     <color name="colorUncheck">#B2D7D2</color>
+    <color name="bgNav">#800000</color>
 
     <!-- Screens background color-->
     <color name="bg_screen1">#800000</color>
@@ -49,4 +50,13 @@
 
     <color name="thumb_inactive">#A5A5A5</color>
     <color name="track_inactive">#66A5A5A5</color>
+
+    <color name="lingkaran_belajar">#800000</color>
+    <color name="lingkaran_tugas">#800000</color>
+    <color name="lingkaran_rapat">#800000</color>
+    <color name="lingkaran_info">#800000</color>
+    <color name="lingkaran_alarm">#800000</color>
+    <color name="lingkaran_lainnya">#800000</color>
+
+    <color name="button">#d67601</color>
 </resources>
